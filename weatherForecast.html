@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Add a google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bruno+Ace&family=Rubik+Moonrocks&family=Rubik:wght@800&display=swap" rel="stylesheet">
+
+    <title>Weather App</title>
+</head>
+<body class="nightMode">
+    <h1>Weather App</h1>
+    <br>
+    <!-- div containing search bar, number of days selector and submit button -->
+    <div class="searchZone">
+        <input type="text" class="searchBar" placeholder="Enter your request">
+        <select name="day" class="daySelect">
+            <option value="0">1 day</option>
+            <option value="1">2 days</option>
+            <option value="2">3 days</option>
+            <option value="3">4 days</option>
+            <option value="4">5 days</option>
+        </select>
+        <button type="button" id="btn">Submit</button>
+    </div>
+    <br>
+    <!-- div containing icons and texts for days -->
+    <div id="iconsAndText">
+        <div class="iconsAndTextSubDiv">
+            <p class="weekDay">&#128070;</p>
+            <img src="" >
+            <p class="temperature"></p>
+        </div>
+
+        <div class="iconsAndTextSubDiv">
+            <p class="weekDay"></p>
+            <img src="" >
+            <p class="temperature"></p>
+        </div>
+
+        <div class="iconsAndTextSubDiv">
+            <p class="weekDay"></p>
+            <img src="" >
+            <p class="temperature"></p>
+        </div>
+
+        <div class="iconsAndTextSubDiv">
+            <p class="weekDay"></p>
+            <img src="" >
+            <p class="temperature"></p>
+        </div>
+
+        <div class="iconsAndTextSubDiv">
+            <p class="weekDay"></p>
+            <img src="" >
+            <p class="temperature"></p>
+        </div>
+        <!-- Section for my loading eye -->
+        <section class="stage">
+            <figure class="ball">
+              <span class="shadow"></span>
+              <span class="iris"></span>
+            </figure>
+      </section>
+
+    </div>
+</body>
+<!-- Here I join all my .js files to the html -->
+<script src="wheatherForecast.js"></script>
+<script src="generateIcons.js"></script>
+<script src="initializeIcons.js"></script>
+<script src="apiCall.js"></script>
+<script src="darkMode.js"></script>
+<script src="wichDay.js"></script>
+<script src="temperature.js"></script>
+</html>
